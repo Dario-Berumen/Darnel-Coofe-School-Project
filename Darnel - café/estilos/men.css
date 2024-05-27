@@ -1,0 +1,113 @@
+/* Estilos de Página Menús*/
+*::after
+*::before
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body
+{
+    max-width: 1200px;
+    font-family: "calibri";
+    margin: 0 auto;
+    color: #644324; /*#333*/
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.container-icon
+{
+    width: 40px;
+    height: 40px;
+}
+
+/*Header de los menús*/
+img{
+    max-width: 100%;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.container-icon{
+    position: relative;
+}
+
+.container-product /*CONTENEDOR PADRE DEL PRODUCTO!!!*/ 
+{
+    display: flex;
+    margin: auto;
+    width: 800px;
+    gap: 40px;
+}
+
+.product
+{
+    border-radius: 10px; 
+}
+
+.product:hover
+{
+    box-shadow: 0 5px 15px #18181894;
+}
+
+.product img 
+{
+    width: 800px; /*100%*/
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover; /*Adapta la escala de las imagenes sin perder detalles*/ 
+}
+
+.product:hover img
+{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/*Informacion Producto*/
+
+.info-product 
+{
+    padding: 15px 30px;
+    line-height: 2; /*Interlineado*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-product p 
+{
+  font-weight: bold;  
+  font-size: 19px;
+}
+
+.info-product a
+{
+    height: 30px;     
+    background-color: #362a1f;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.info-product a:hover
+{
+    box-shadow: 0 5px 15px #18181894;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.info-product a:active
+{
+    transform: scale(0.5);
+    transition: transform 0.3s ease;
+}

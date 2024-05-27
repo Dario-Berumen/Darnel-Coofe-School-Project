@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desayunos</title>
+    <link rel="stylesheet" href="./estilos/men.css">
+    <link rel="stylesheet" href="./estilos/detallesVentana.css">
+</head>
+<body>
+    <header>
+        <h1>Menú Desayunos</h1>        
+        <div class="container-icon">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon-cart"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+            </svg>
+    </header>
+
+    <div class = "sub_ventana" id = "window">       
+        <div class="sub_head">
+            <h3 id = "title">Chilaquiles Verdes</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close_icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" id = "close_bt"/>
+                </svg>
+        </div>
+       
+        <div class="content">
+            <div class="imagen">
+                    <img src="./imagenes/chilaquilesVerdes.jpg" id = "img">
+                    <a href="./pedido.html" id = "orden">Añadir a la orden</a>
+            </div>
+            <div class="descripcion">
+                <h4>Descripción</h4>
+                <p id = "p1">Un plato clásico de la cocina mexicana que combina la suavidad de los totopos de maíz bañados en una salsa verde vibrante, con la frescura de la cebolla crujiente, la cremosidad del queso fresco, el toque ácido de la crema y el aroma del cilantro fresco.</p>
+                <p id = "p2">Ingredientes principales</p>
+            </div>
+        </div>
+    </div>
+
+    <div id = "fondo_obscuro">
+    </div>
+    <div class = "container-product" >
+        <div class="product">
+            <figure>
+                <img src="./imagenes/chilaquilesVerdes.jpg" alt="Plato de chilaquiles verdes">
+            </figure>
+            <div class = "info-product">
+                <h2>Chilaquiles salsa verde</h2>
+                <p class = "price">$65</p>
+                <a href="javascript:abrir('Chilaquiles Verdes')"   class = "button">Ver más a detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-product">
+        <div class="product">
+            <figure>
+                <img src="./imagenes/chilaquitesRojos.jpg" alt="Plato de chilaquiles rojos">
+            </figure>
+            <div class = "info-product">
+                <h2>Chilaquiles salsa roja</h2>
+                <p class = "price">$65</p>
+                <a href="javascript:abrir('Chilaquiles Rojos')" id = "bt_chilaquilesRojos">Ver más a detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-product" >
+        <div class="product">
+            <figure>
+                <img src="./imagenes/huevosEstrellados.jpg" alt="Plato huevos estrellados">
+            </figure>
+            <div class = "info-product">
+                    <h2>Huevos Estrellados</h2>
+                    <p class = "price">$40</p>
+                    <a href="javascript:abrir('Huevos Estrellados')"   class = "button">Ver más a detalles</a>
+            </div>
+        </div>
+    </div>
+        
+    <div class = "container-product" >
+        <div class="product">
+            <figure>
+                <img src="./imagenes/huevosRevueltos.jpg" alt="Plato de huevos revueltos">
+            </figure>
+            <div class = "info-product">
+                    <h2>Huevos revueltos</h2>
+                    <p class = "price">$40</p>
+                    <a href="javascript:abrir('Huevos Revueltos')"   class = "button">Ver más a detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-product" >
+        <div class="product">
+            <figure>
+                <img src="./imagenes/molletes.jpg" alt="Plato de molletes salados">
+            </figure>
+            <div class = "info-product">
+                    <h2>Molletes Salados</h2>
+                    <p class = "price">$50</p>
+                    <a href="javascript:abrir('Molletes Salados')"   class = "button">Ver más a detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-product" >
+        <div class="product">
+            <figure>
+                <img src="./imagenes/molletesDulces.jpg" alt="Plato de de molletes dulces">
+            </figure>
+            <div class = "info-product">
+                    <h2>molletes dulces</h2>
+                    <p class = "price">$50</p>
+                    <a href="javascript:abrir('Molletes Dulces')"   class = "button">Ver más a detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-product" >
+        <div class="product">
+            <figure>
+                <img src="./imagenes/omelettepng.png" alt="Plato de omelette de jamón y queso">
+            </figure>
+            <div class = "info-product">
+                    <h2>omelette con jamón y queso</h2>
+                    <p class = "price">$60</p>
+                    <a href="javascript:abrir('Omelette')"   class = "button">Ver más a detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-product" >
+        <div class="product">
+            <figure>
+                <img src="./imagenes/waffles.jpg" alt="Plato de waffles dulces">
+            </figure>
+            <div class = "info-product">
+                    <h2>Waffles</h2>
+                    <p class = "price">$60</p>
+                    <a href="javascript:abrir('Waffles')"   class = "button">Ver más a detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-product" >
+        <div class="product">
+            <figure>
+                <img src="./imagenes/panFrances.jpg" alt="Plato de waffles dulces">
+            </figure>
+            <div class = "info-product">
+                    <h2>Pan Francés</h2>
+                    <p class = "price">$75</p>
+                    <a href="javascript:abrir('Pan Francés')"   class = "button">Ver más a detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-product" >
+        <div class="product">
+            <figure>
+                <img src="./imagenes/manzana-canela.jpg" alt="Plato de waffles dulces">
+            </figure>
+            <div class = "info-product">
+                    <h2>Avena de Manzana</h2>
+                    <p class = "price">$40</p>
+                    <a href="javascript:abrir('Avena de manzana')"   class = "button">Ver más a detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/subVentana.js"></script>
+</body>
+</html>
